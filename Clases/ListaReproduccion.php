@@ -11,24 +11,24 @@
  * @author felipe
  */
 class ListaReproduccion {
-    var $id_coleccion;
+    var $id;
     var $nombre;
-    var $ruta_imagen;
+    var $rutaImagen;
     
-     function __construct($id_coleccion, $nombre, $ruta_imagen) 
+     function __construct($id,$nombre,$rutaImagen) 
     {
-         $this->id_coleccion=$id_coleccion;
+         $this->id=$id;
          $this->nombre=$nombre;
-         $this->ruta_imagen = $ruta_imagen;
+         $this->rutaImagen=$rutaImagen;
          
      }
      
-    public function getIdColeccion() {
-        return $this->id_coleccion;
+    public function getId() {
+        return $this->id;
     }
 
     public function setId($id) {
-        $this->id_coleccion = $id;
+        $this->id = $id;
     }
     
      public function getNombre() {
@@ -38,15 +38,13 @@ class ListaReproduccion {
     public function setNombre($nombre) {
         $this->nombre = $nombre;
     }
-    
     public function getRutaImagen() {
-        return $this->ruta_imagen;
+        return $this->nombre;
     }
 
-    public function setRutaImagen($ruta) {
-        $this->ruta_imagen = $ruta;
-        
-        }
+    public function setRutaImagen($nombre) {
+        $this->nombre = $nombre;
+    }
     
 }
 
