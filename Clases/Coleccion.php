@@ -16,7 +16,8 @@ class Coleccion {
     var $lista_canciones=array();
     var $listas_reprod=array();
 
-    function __construct($id_usuario, $lista_canciones, $listas_reprod) {
+    function __construct($id_usuario, $lista_canciones, $listas_reprod) 
+    {
 
         $this->id_usuario = $id_usuario;
         $this->lista_canciones = $lista_canciones;
